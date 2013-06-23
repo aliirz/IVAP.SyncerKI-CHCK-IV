@@ -17,6 +17,7 @@ namespace IVAP.Syncer
         public App()
         {
             Mapper.CreateMap<Survey, SyncedSurvey>();
+            Mapper.CreateMap<UnscyncedKI, SyncedKI>();
         }
     }
 }

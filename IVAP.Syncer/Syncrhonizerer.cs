@@ -7,6 +7,257 @@ namespace IVAP.Syncer
 {
     public class Syncrhonizerer
     {
+
+
+        /// <summary>
+        /// Sync UnsyncedKI file
+        /// </summary>
+        /// <param name="unsyncedFile"></param>
+        /// <returns></returns>
+        public List<SyncedKI> SyncKeyInformantFile(List<UnscyncedKI> unsyncedFile)
+        {
+            List<SyncedKI> synced = new List<SyncedKI>();
+            foreach (UnscyncedKI u in unsyncedFile)
+            {
+                SyncedKI s = new SyncedKI();
+                s = AutoMapper.Mapper.Map<SyncedKI>(u);
+
+                //Begin Biohazard Syncing operation
+                //sync occupation
+                if (s.occupation.Contains("a"))
+                {
+                    s.occupation_a = "Teacher";
+                }
+                if (s.occupation.Contains("b"))
+                {
+                    s.occupation_b = "Mosque Leader";
+                }
+                if (s.occupation.Contains("c"))
+                {
+                    s.occupation_c = "Community Leader";
+                }
+                if (s.occupation.Contains("d"))
+                {
+                    s.occupation_d = "Tribal Leader";
+                }
+                if (s.occupation.Contains("e"))
+                {
+                    s.occupation_e = "Health Care Provider";
+                }
+                if (s.occupation.Contains("f"))
+                {
+                    s.occupation_f = "Others";
+                }
+
+
+                //sync no_BHU
+                if (s.no_BHU.Contains("a"))
+                {
+                    s.no_BHU_a = "Unavailability of doctors";
+                }
+                if (s.no_BHU.Contains("b"))
+                {
+                    s.no_BHU_b = "Unavailability of nurses";
+                }
+                if (s.no_BHU.Contains("c"))
+                {
+                    s.no_BHU_c = "Unavailability of administrational staff";
+                }
+                if (s.no_BHU.Contains("d"))
+                {
+                    s.no_BHU_d = "Unavailability of BHU";
+                }
+                if (s.no_BHU.Contains("e"))
+                {
+                    s.no_BHU_e = "Unavailability of services";
+                }
+                if (s.no_BHU.Contains("f"))
+                {
+                    s.no_BHU_f = "Other";
+                }
+
+
+                //sync health_problem
+                if (s.health_problem.Contains("a"))
+                {
+                    s.health_problem_a = "Unavailability of health facilities";
+
+                }
+                if (s.health_problem.Contains("b"))
+                {
+                    s.health_problem_b = "Unavailability of medicines";
+                }
+                if (s.health_problem.Contains("c"))
+                {
+                    s.health_problem_c = "Unavailability of staff (doctors, nurses, administrational)";
+                }
+                if (s.health_problem.Contains("d"))
+                {
+                    s.health_problem_d = "Child health issues";
+                }
+                if (s.health_problem.Contains("e"))
+                {
+                    s.health_problem_e = "Women health issues";
+                }
+                if (s.health_problem.Contains("f"))
+                {
+                    s.health_problem_f = "Water pollution";
+                }
+                if (s.health_problem.Contains("g"))
+                {
+                    s.health_problem_g = "Environmental pollution";
+                }
+                if (s.health_problem.Contains("h"))
+                {
+                    s.health_problem_h = "Cleanliness/hygiene";
+                }
+                if (s.health_problem.Contains("i"))
+                {
+                    s.health_problem_i = "Others";
+                }
+
+                //sync school_setup
+                if (s.school_setup.Contains("a"))
+                {
+                    s.school_setup_a = "Strong accountability (checks/balance) system";
+                }
+                if (s.school_setup.Contains("b"))
+                {
+                    s.school_setup_b = "Increase number of Staff members (Teaching and Administration)";
+                }
+                if (s.school_setup.Contains("c"))
+                {
+                    s.school_setup_c = "Provision of infrastructure facilities (furniture, study material, proper class room";
+                }
+                if (s.school_setup.Contains("d"))
+                {
+                    s.school_setup_d = "Focus more on quality education for children";
+                }
+                if (s.school_setup.Contains("e"))
+                {
+                    s.school_setup_e = "Others";
+                }
+
+
+                //sync danger_zone
+                if (s.danger_zone.Contains("a"))
+                {
+                    s.danger_zone_a = "In transit to market";
+                }
+                if (s.danger_zone.Contains("b"))
+                {
+                    s.danger_zone_b = "While using public transit";
+                }
+                if (s.danger_zone.Contains("c"))
+                {
+                    s.danger_zone_c = "Water collection points";
+                }
+                if (s.danger_zone.Contains("d"))
+                {
+                    s.danger_zone_d = "Bathing points";
+                }
+                if (s.danger_zone.Contains("e"))
+                {
+                    s.danger_zone_e = "While working in the field";
+                }
+                if (s.danger_zone.Contains("f"))
+                {
+                    s.danger_zone_f = "In the health facility";
+                }
+                if (s.danger_zone.Contains("g"))
+                {
+                    s.danger_zone_g = "Market";
+                }
+                if (s.danger_zone.Contains("h"))
+                {
+                    s.danger_zone_h = "In transit to school";
+                }
+                if (s.danger_zone.Contains("i"))
+                {
+                    s.danger_zone_i = "School";
+                }
+                if (s.danger_zone.Contains("j"))
+                {
+                    s.danger_zone_j = "Don't Know";
+                }
+                if (s.danger_zone.Contains("k"))
+                {
+                    s.danger_zone_k = "None";
+                }
+
+
+                //sync violence
+                if (s.violence.Contains("a"))
+                {
+                    s.violence_a = "Physical violence";
+                }
+                if (s.violence.Contains("b"))
+                {
+                    s.violence_b = "Verbal abuse";
+                }
+                if (s.violence.Contains("c"))
+                {
+                    s.violence_c = "Early marriages";
+                }
+                if (s.violence.Contains("d"))
+                {
+                    s.violence_d = "Social discrimination";
+                }
+                if (s.violence.Contains("e"))
+                {
+                    s.violence_e = "Domestic violence, Harassment, Lack of awareness of human rights";
+                }
+                if (s.violence.Contains("f"))
+                {
+                    s.violence_f = "Honor Killing";
+                }
+                if (s.violence.Contains("g"))
+                {
+                    s.violence_g = "None";
+                }
+                if (s.violence.Contains("h"))
+                {
+                    s.violence_h = "Dont Know";
+                }
+                if (s.violence.Contains("i"))
+                {
+                    s.violence_i = "Other";
+                }
+
+
+                //sync community
+                if (s.community.Contains("a"))
+                {
+                    s.community_a = "On shelter";
+                }
+                if (s.community.Contains("b"))
+                {
+                    s.community_b = "On water";
+                }
+                if (s.community.Contains("c"))
+                {
+                    s.community_c = "Health";
+                }
+                if (s.community.Contains("d"))
+                {
+                    s.community_d = "Education";
+                }
+                if (s.community.Contains("e"))
+                {
+                    s.community_e = "None";
+                }
+                if (s.community.Contains("f"))
+                {
+                    s.community_f = "Other";
+                }
+
+
+                synced.Add(s);
+            }
+
+            return synced;
+        }
+
         /// <summary>
         /// Syncs the Survey file.
         /// </summary>

@@ -70,12 +70,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="KI.xaml.cs">
+      <DependentUpon>KI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Survey.cs" />
+    <Compile Include="SyncedKI.cs" />
     <Compile Include="SyncedSurvey.cs" />
     <Compile Include="Syncing.xaml.cs">
       <DependentUpon>Syncing.xaml</DependentUpon>
     </Compile>
     <Compile Include="Syncrhonizerer.cs" />
+    <Compile Include="UnscyncedKi.cs" />
+    <Page Include="KI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

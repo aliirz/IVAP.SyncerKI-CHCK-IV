@@ -173,5 +173,12 @@ namespace IVAP.Syncer
         {
 
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            KI k = new KI();
+            k.Show();
+            this.Hide();
+        }
     }
 }
