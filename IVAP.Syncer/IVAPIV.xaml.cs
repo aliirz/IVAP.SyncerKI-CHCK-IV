@@ -16,25 +16,28 @@ using System.IO;
 namespace IVAP.Syncer
 {
     /// <summary>
-    /// Interaction logic for KI.xaml
+    /// Interaction logic for IVAPIV.xaml
     /// </summary>
-    public partial class KI : Window
+    public partial class IVAPIV : Window
     {
 
         private MainWindow _mainWindow;
 
-        public KI(MainWindow mainWindow)
+        public IVAPIV(MainWindow mainWindow)
         {
+
             _mainWindow = mainWindow;
             InitializeComponent();
         }
 
-        public KI()
+
+
+        public IVAPIV()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void upload_btn_Click(object sender, RoutedEventArgs e)
         {
             // Create OpenFileDialog 
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -43,7 +46,7 @@ namespace IVAP.Syncer
 
             // Set filter for file extension and default file extension 
             dlg.DefaultExt = ".csv";
-            //dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+            //dlg.Filter = "CSV Files (*.csv)";
 
 
             // Display OpenFileDialog by calling ShowDialog method 
@@ -55,21 +58,21 @@ namespace IVAP.Syncer
             {
                 // Open document 
                 string filename = dlg.FileName;
-                KITextBox.Text = filename;
+                questionaireTextBox.Text = filename;
             }
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void sync_btn_Click(object sender, RoutedEventArgs e)
         {
-            var syncedList = new List<SyncedKI>();
+            var syncedList = new List<SyncedIV>();
             try
             {
-                var reader = new CsvReader(new StreamReader(KITextBox.Text));
-                var unsynced = reader.GetRecords<UnscyncedKI>().ToList();
+                var reader = new CsvReader(new StreamReader(questionaireTextBox.Text));
+                var unsynced = reader.GetRecords<UnsyncedIV>().ToList();
                 Syncrhonizerer s = new Syncrhonizerer();
 
-                var synced = s.SyncKeyInformantFile(unsynced.ToList());
-                using (var csv = new CsvWriter(new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\SyncedKIList.csv")))
+                var synced = s.SyncIVAPIVSurvey(unsynced.ToList());
+                using (var csv = new CsvWriter(new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\SynceIVAP4Data.csv")))
                 {
                     csv.WriteRecords(synced);
                 }

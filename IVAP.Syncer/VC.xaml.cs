@@ -16,25 +16,25 @@ using System.IO;
 namespace IVAP.Syncer
 {
     /// <summary>
-    /// Interaction logic for KI.xaml
+    /// Interaction logic for VC.xaml
     /// </summary>
-    public partial class KI : Window
+    public partial class VC : Window
     {
-
         private MainWindow _mainWindow;
 
-        public KI(MainWindow mainWindow)
+
+        public VC(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;
             InitializeComponent();
         }
 
-        public KI()
+        public VC()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
             // Create OpenFileDialog 
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -43,7 +43,7 @@ namespace IVAP.Syncer
 
             // Set filter for file extension and default file extension 
             dlg.DefaultExt = ".csv";
-            //dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+            //dlg.Filter = "CSV Files (*.csv)";
 
 
             // Display OpenFileDialog by calling ShowDialog method 
@@ -55,21 +55,21 @@ namespace IVAP.Syncer
             {
                 // Open document 
                 string filename = dlg.FileName;
-                KITextBox.Text = filename;
+                vcTextBox.Text = filename;
             }
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
-            var syncedList = new List<SyncedKI>();
+            var syncedList = new List<SyncedVC>();
             try
             {
-                var reader = new CsvReader(new StreamReader(KITextBox.Text));
-                var unsynced = reader.GetRecords<UnscyncedKI>().ToList();
+                var reader = new CsvReader(new StreamReader(vcTextBox.Text));
+                var unsynced = reader.GetRecords<UnsyncedVC>().ToList();
                 Syncrhonizerer s = new Syncrhonizerer();
 
-                var synced = s.SyncKeyInformantFile(unsynced.ToList());
-                using (var csv = new CsvWriter(new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\SyncedKIList.csv")))
+                var synced = s.SyncVerificationChecklist(unsynced.ToList());
+                using (var csv = new CsvWriter(new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\SyncedVCList.csv")))
                 {
                     csv.WriteRecords(synced);
                 }

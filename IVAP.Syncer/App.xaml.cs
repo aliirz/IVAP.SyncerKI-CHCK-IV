@@ -18,6 +18,8 @@ namespace IVAP.Syncer
         {
             Mapper.CreateMap<Survey, SyncedSurvey>();
             Mapper.CreateMap<UnscyncedKI, SyncedKI>();
+            Mapper.CreateMap<UnsyncedVC, SyncedVC>();
+            Mapper.CreateMap<UnsyncedIV, SyncedIV>();
         }
     }
 }

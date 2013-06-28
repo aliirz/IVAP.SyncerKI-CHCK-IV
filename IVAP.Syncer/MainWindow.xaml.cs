@@ -80,7 +80,7 @@ namespace IVAP.Syncer
                                 if (uCSV.FieldHeaders[i] == keys[j])
                                 {
                                     if (uCSV[i].Contains(keys[j + 1]))
-                                        syncedList.Add(keys[j + 2]);
+                                        syncedList.Add(keys[j + 2]); //check replace
 
                                     //means this is something to be replaced lets replace it with the key
                                 }
@@ -176,8 +176,22 @@ namespace IVAP.Syncer
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            KI k = new KI();
+            KI k = new KI(this);
             k.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            VC v = new VC(this);
+            v.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            IVAPIV iv = new IVAPIV(this);
+            iv.Show();
             this.Hide();
         }
     }
