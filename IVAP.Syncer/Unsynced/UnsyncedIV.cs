@@ -1456,6 +1456,9 @@ namespace IVAP.Syncer
         [CsvField(Name = "IDP:IC")]
         public string IC { get; set; }
 
+        [CsvField(Name = "meta:instanceID")]
+        public string MetaInstanceID { get; set; }
+
 
 
 
