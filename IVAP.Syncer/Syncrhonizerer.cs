@@ -6260,7 +6260,7 @@ namespace IVAP.Syncer
                         case "b":
                             s.E2 = "No";
                             break;
-                        case "b":
+                        case "c":
                             s.E2 = "Not applicable";
                             break;
                     }
