@@ -6247,6 +6247,9 @@ namespace IVAP.Syncer
                         case "b":
                             s.E1 = "No";
                             break;
+                        case "c":
+                            s.E1 = "Not applicable";
+                            break;
                     }
                     //sync E2 
                     switch (s.E2)
@@ -6256,6 +6259,9 @@ namespace IVAP.Syncer
                             break;
                         case "b":
                             s.E2 = "No";
+                            break;
+                        case "b":
+                            s.E2 = "Not applicable";
                             break;
                     }
 
