@@ -8,8 +8,14 @@ namespace IVAP.Syncer
 {
     public class UnsyncedIV
     {
-        [CsvField(Name = "today")]
-        public string today { get; set; }
+        //[CsvField(Name = "today")]
+        //public string today { get; set; }
+
+        [CsvField(Name = "start")]
+        public string start { get; set; }
+
+        [CsvField(Name = "end")]
+        public string end { get; set; }
 
         [CsvField(Name = "GI4")]
         public string GI4 { get; set; }
