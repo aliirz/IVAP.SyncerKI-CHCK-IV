@@ -22,13 +22,13 @@ namespace IVAP.Syncer
                 {
                     SyncedIV s = AutoMapper.Mapper.Map<UnsyncedIV, SyncedIV>(u);
 
-                    switch (s.GI4)
+                    switch (s.GI4a)
                     {
                         case "a":
-                            s.GI4 = "Male";
+                            s.GI4a = "Male";
                             break;
                         case "b":
-                            s.GI4 = "Female";
+                            s.GI4a = "Female";
                             break;
                     }
 

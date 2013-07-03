@@ -19,6 +19,10 @@ namespace IVAP.Syncer
 
         [CsvField(Name = "GI4")]
         public string GI4 { get; set; }
+
+        [CsvField(Name = "GI4a")]
+        public string GI4a { get; set; }
+
         [CsvField(Name = "District")]
         public string District { get; set; }
         [CsvField(Name = "Tehsil")]
