@@ -129,7 +129,8 @@ namespace IVAP.Syncer
         [CsvField(Name = "respondent_accent")]
         public string respondent_accent { get; set; }
 
-        
+        [CsvField(Name = "meta:instanceID")]
+        public string MetaInstanceID { get; set; }
 
 
 

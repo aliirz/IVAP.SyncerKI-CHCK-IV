@@ -65,5 +65,7 @@ namespace IVAP.Syncer
         public string separated_child { get; set; }
         public string num_separate { get; set; }
         public string contact_idp { get; set; }
+        [CsvField(Name = "meta:instanceID")]
+        public string MetaInstanceID { get; set; }
     }
 }
