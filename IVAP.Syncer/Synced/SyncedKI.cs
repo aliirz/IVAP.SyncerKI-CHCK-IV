@@ -61,13 +61,14 @@ namespace IVAP.Syncer
         public string health_problem_g { get; set; }
         public string health_problem_h { get; set; }
         public string health_problem_i { get; set; }
-        
+
 
 
         public string health_problem_other { get; set; }
         public string medical_staff { get; set; }
         public string child_disease { get; set; }
         //public string village_BHU { get; set; }
+        [CsvField(Name = "distance")]
         public string distance { get; set; }
         public string boys_school { get; set; }
         public string b_grade { get; set; }
@@ -133,6 +134,6 @@ namespace IVAP.Syncer
         public string contact_idp { get; set; }
         [CsvField(Name = "meta:instanceID")]
         public string MetaInstanceID { get; set; }
-        
+
     }
 }

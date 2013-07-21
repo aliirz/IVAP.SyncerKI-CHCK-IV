@@ -244,6 +244,7 @@ namespace IVAP.Syncer
         public string chr_ill_2_i { get; set; }
 
         public string chr_ill_2_j { get; set; }
+        public string chr_ill_2_k { get; set; }
 
         [CsvField(Name = "IDP:HH_2:chr_ill_2_Other")]
         public string chr_ill_2_Other { get; set; }
@@ -339,6 +340,7 @@ namespace IVAP.Syncer
         public string chr_ill_3_i { get; set; }
 
         public string chr_ill_3_j { get; set; }
+        public string chr_ill_3_k { get; set; }
 
         [CsvField(Name = "IDP:HH_3:chr_ill_3_Other")]
         public string chr_ill_3_Other { get; set; }
@@ -436,6 +438,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_4_j { get; set; }
 
+        public string chr_ill_4_k { get; set; }
+
         [CsvField(Name = "IDP:HH_4:chr_ill_4_Other")]
         public string chr_ill_4_Other { get; set; }
 
@@ -531,6 +535,7 @@ namespace IVAP.Syncer
         public string chr_ill_5_i { get; set; }
 
         public string chr_ill_5_j { get; set; }
+        public string chr_ill_5_k { get; set; }
 
         [CsvField(Name = "IDP:HH_5:chr_ill_5_Other")]
         public string chr_ill_5_Other { get; set; }
@@ -627,6 +632,7 @@ namespace IVAP.Syncer
         public string chr_ill_6_i { get; set; }
 
         public string chr_ill_6_j { get; set; }
+        public string chr_ill_6_k { get; set; }
 
         [CsvField(Name = "IDP:HH_6:chr_ill_6_Other")]
         public string chr_ill_6_Other { get; set; }
@@ -724,6 +730,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_7_j { get; set; }
 
+        public string chr_ill_7_k { get; set; }
+
         [CsvField(Name = "IDP:HH_7:chr_ill_7_Other")]
         public string chr_ill_7_Other { get; set; }
 
@@ -819,6 +827,8 @@ namespace IVAP.Syncer
         public string chr_ill_8_i { get; set; }
 
         public string chr_ill_8_j { get; set; }
+
+        public string chr_ill_8_k { get; set; }
 
         [CsvField(Name = "IDP:HH_8:chr_ill_8_Other")]
         public string chr_ill_8_Other { get; set; }
@@ -916,6 +926,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_9_j { get; set; }
 
+        public string chr_ill_9_k { get; set; }
+
         [CsvField(Name = "IDP:HH_9:chr_ill_9_Other")]
         public string chr_ill_9_Other { get; set; }
 
@@ -1012,6 +1024,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_10_j { get; set; }
 
+        public string chr_ill_10_k { get; set; }
+
         [CsvField(Name = "IDP:HH_10:chr_ill_10_Other")]
         public string chr_ill_10_Other { get; set; }
 
@@ -1082,6 +1096,8 @@ namespace IVAP.Syncer
 
         public string phy_disable_11_j { get; set; }
 
+
+
         [CsvField(Name = "IDP:HH_11:p_11_other")]
         public string p_11_other { get; set; }
 
@@ -1107,6 +1123,8 @@ namespace IVAP.Syncer
         public string chr_ill_11_i { get; set; }
 
         public string chr_ill_11_j { get; set; }
+
+        public string chr_ill_11_k { get; set; }
 
         [CsvField(Name = "IDP:HH_11:chr_ill_11_Other")]
         public string chr_ill_11_Other { get; set; }
@@ -1204,6 +1222,10 @@ namespace IVAP.Syncer
 
         public string chr_ill_12_j { get; set; }
 
+        public string chr_ill_12_k { get; set; }
+
+
+
         [CsvField(Name = "IDP:HH_12:chr_ill_12_Other")]
         public string chr_ill_12_Other { get; set; }
 
@@ -1299,6 +1321,8 @@ namespace IVAP.Syncer
         public string chr_ill_13_i { get; set; }
 
         public string chr_ill_13_j { get; set; }
+
+        public string chr_ill_13_k { get; set; }
 
         [CsvField(Name = "IDP:HH_13:chr_ill_13_Other")]
         public string chr_ill_13_Other { get; set; }
@@ -1396,6 +1420,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_14_j { get; set; }
 
+        public string chr_ill_14_k { get; set; }
+
         [CsvField(Name = "IDP:HH_14:chr_ill_14_Other")]
         public string chr_ill_14_Other { get; set; }
 
@@ -1491,6 +1517,8 @@ namespace IVAP.Syncer
         public string chr_ill_15_i { get; set; }
 
         public string chr_ill_15_j { get; set; }
+
+        public string chr_ill_15_k { get; set; }
 
         [CsvField(Name = "IDP:HH_15:chr_ill_15_Other")]
         public string chr_ill_15_Other { get; set; }
@@ -1588,6 +1616,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_16_j { get; set; }
 
+        public string chr_ill_16_k { get; set; }
+
         [CsvField(Name = "IDP:HH_16:chr_ill_16_Other")]
         public string chr_ill_16_Other { get; set; }
 
@@ -1683,6 +1713,8 @@ namespace IVAP.Syncer
         public string chr_ill_17_i { get; set; }
 
         public string chr_ill_17_j { get; set; }
+
+        public string chr_ill_17_k { get; set; }
 
         [CsvField(Name = "IDP:HH_17:chr_ill_17_Other")]
         public string chr_ill_17_Other { get; set; }
@@ -1780,6 +1812,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_18_j { get; set; }
 
+        public string chr_ill_18_k { get; set; }
+
         [CsvField(Name = "IDP:HH_18:chr_ill_18_Other")]
         public string chr_ill_18_Other { get; set; }
 
@@ -1875,6 +1909,8 @@ namespace IVAP.Syncer
         public string chr_ill_19_i { get; set; }
 
         public string chr_ill_19_j { get; set; }
+
+        public string chr_ill_19_k { get; set; }
 
         [CsvField(Name = "IDP:HH_19:chr_ill_19_Other")]
         public string chr_ill_19_Other { get; set; }
@@ -1972,6 +2008,10 @@ namespace IVAP.Syncer
 
         public string chr_ill_20_j { get; set; }
 
+        public string chr_ill_20_k { get; set; }
+
+
+
         [CsvField(Name = "IDP:HH_20:chr_ill_20_Other")]
         public string chr_ill_20_Other { get; set; }
 
@@ -2067,6 +2107,8 @@ namespace IVAP.Syncer
         public string chr_ill_21_i { get; set; }
 
         public string chr_ill_21_j { get; set; }
+
+        public string chr_ill_21_k { get; set; }
 
         [CsvField(Name = "IDP:HH_21:chr_ill_21_Other")]
         public string chr_ill_21_Other { get; set; }
@@ -2164,6 +2206,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_22_j { get; set; }
 
+        public string chr_ill_22_k { get; set; }
+
         [CsvField(Name = "IDP:HH_22:chr_ill_22_Other")]
         public string chr_ill_22_Other { get; set; }
 
@@ -2259,6 +2303,8 @@ namespace IVAP.Syncer
         public string chr_ill_23_i { get; set; }
 
         public string chr_ill_23_j { get; set; }
+
+        public string chr_ill_23_k { get; set; }
 
         [CsvField(Name = "IDP:HH_23:chr_ill_23_Other")]
         public string chr_ill_23_Other { get; set; }
@@ -2356,6 +2402,8 @@ namespace IVAP.Syncer
 
         public string chr_ill_24_j { get; set; }
 
+        public string chr_ill_24_k { get; set; }
+
         [CsvField(Name = "IDP:HH_24:chr_ill_24_Other")]
         public string chr_ill_24_Other { get; set; }
 
@@ -2451,6 +2499,8 @@ namespace IVAP.Syncer
         public string chr_ill_25_i { get; set; }
 
         public string chr_ill_25_j { get; set; }
+
+        public string chr_ill_25_k { get; set; }
 
         [CsvField(Name = "IDP:HH_25:chr_ill_25_Other")]
         public string chr_ill_25_Other { get; set; }

@@ -456,7 +456,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_1.Contains("k"))
                     {
-                        s.chr_ill_1_h = "Others";
+                        s.chr_ill_1_k = "Others";
                     }
 
 
@@ -641,7 +641,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_2.Contains("k"))
                     {
-                        s.chr_ill_2_h = "Others";
+                        s.chr_ill_2_k = "Others";
                     }
 
                     switch (s.MUAC_2)
@@ -6091,7 +6091,7 @@ namespace IVAP.Syncer
                     if (s.FS3.Contains("l"))
                         s.FS3_l = "Sent family members to work abroad";
                     if (s.FS3.Contains("m"))
-                        s.FS3_m = "Selling of assets";
+                        s.FS3_m = "Selling of assets/livestock";
                     if (s.FS3.Contains("n"))
                         s.FS3_n = "None of these";
 
