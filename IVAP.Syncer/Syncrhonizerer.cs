@@ -420,7 +420,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_1.Contains("b"))
                     {
-                        s.chr_ill_1_a = "Asthma (Acute Respiratory Infection)";
+                        s.chr_ill_1_b = "Asthma (Acute Respiratory Infection)";
                     }
                     if (s.chr_ill_1.Contains("c"))
                     {
@@ -448,7 +448,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_1.Contains("i"))
                     {
-                        s.chr_ill_1_i = "Blooed pressure";
+                        s.chr_ill_1_i = "Blood pressure";
                     }
                     if (s.chr_ill_1.Contains("j"))
                     {
