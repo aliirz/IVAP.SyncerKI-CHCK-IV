@@ -7557,9 +7557,9 @@ namespace IVAP.Syncer
                     s.community_f = "Other";
                 }
 
-                Console.WriteLine("Rent : " + s.rent);
-                s.rent = s.rent.Replace('–', ' - ');
-                Console.WriteLine("Rent : " + s.rent);
+               Console.WriteLine("Rent : " + s.rent);
+                //s.rent = s.rent.Replace('–', '-');
+               //Console.WriteLine("Rent : " + s.rent);
                 synced.Add(s);
             }
 

@@ -68,6 +68,7 @@ namespace IVAP.Syncer
         public string medical_staff { get; set; }
         public string child_disease { get; set; }
         //public string village_BHU { get; set; }
+       // [CsvField(Name = "distance")]
         public string distance { get; set; }
         public string boys_school { get; set; }
         public string b_grade { get; set; }
