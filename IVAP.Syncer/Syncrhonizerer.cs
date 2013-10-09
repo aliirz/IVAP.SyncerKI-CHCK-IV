@@ -261,6 +261,9 @@ namespace IVAP.Syncer
                         case "l":
                             s.GIPA_1 = "Out of country";
                             break;
+                        case "m":
+                            s.GIPA_1 = "D I Khan";
+                            break;
                     }
 
                     switch (s.FH)
@@ -605,7 +608,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_2.Contains("b"))
                     {
-                        s.chr_ill_2_a = "Asthma (Acute Respiratory Infection)";
+                        s.chr_ill_2_b = "Asthma (Acute Respiratory Infection)";
                     }
                     if (s.chr_ill_2.Contains("c"))
                     {
@@ -633,7 +636,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_2.Contains("i"))
                     {
-                        s.chr_ill_2_i = "Blooed pressure";
+                        s.chr_ill_2_i = "Blood pressure";
                     }
                     if (s.chr_ill_2.Contains("j"))
                     {
@@ -837,7 +840,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_3.Contains("i"))
                     {
-                        s.chr_ill_3_i = "Blooed pressure";
+                        s.chr_ill_3_i = "Blood pressure";
                     }
                     if (s.chr_ill_3.Contains("j"))
                     {
@@ -1040,7 +1043,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_4.Contains("i"))
                     {
-                        s.chr_ill_4_i = "Blooed pressure";
+                        s.chr_ill_4_i = "Blood pressure";
                     }
                     if (s.chr_ill_4.Contains("j"))
                     {
@@ -1244,7 +1247,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_5.Contains("i"))
                     {
-                        s.chr_ill_5_i = "Blooed pressure";
+                        s.chr_ill_5_i = "Blood pressure";
                     }
                     if (s.chr_ill_5.Contains("j"))
                     {
@@ -1448,7 +1451,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_6.Contains("i"))
                     {
-                        s.chr_ill_6_i = "Blooed pressure";
+                        s.chr_ill_6_i = "Blood pressure";
                     }
                     if (s.chr_ill_6.Contains("j"))
                     {
@@ -1652,7 +1655,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_7.Contains("i"))
                     {
-                        s.chr_ill_7_i = "Blooed pressure";
+                        s.chr_ill_7_i = "Blood pressure";
                     }
                     if (s.chr_ill_7.Contains("j"))
                     {
@@ -1856,7 +1859,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_8.Contains("i"))
                     {
-                        s.chr_ill_8_i = "Blooed pressure";
+                        s.chr_ill_8_i = "Blood pressure";
                     }
                     if (s.chr_ill_8.Contains("j"))
                     {
@@ -2060,7 +2063,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_9.Contains("i"))
                     {
-                        s.chr_ill_9_i = "Blooed pressure";
+                        s.chr_ill_9_i = "Blood pressure";
                     }
                     if (s.chr_ill_9.Contains("j"))
                     {
@@ -2264,7 +2267,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_10.Contains("i"))
                     {
-                        s.chr_ill_10_i = "Blooed pressure";
+                        s.chr_ill_10_i = "Blood pressure";
                     }
                     if (s.chr_ill_10.Contains("j"))
                     {
@@ -2468,7 +2471,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_11.Contains("i"))
                     {
-                        s.chr_ill_11_i = "Blooed pressure";
+                        s.chr_ill_11_i = "Blood pressure";
                     }
                     if (s.chr_ill_11.Contains("j"))
                     {
@@ -2672,7 +2675,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_12.Contains("i"))
                     {
-                        s.chr_ill_12_i = "Blooed pressure";
+                        s.chr_ill_12_i = "Blood pressure";
                     }
                     if (s.chr_ill_12.Contains("j"))
                     {
@@ -2876,7 +2879,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_13.Contains("i"))
                     {
-                        s.chr_ill_13_i = "Blooed pressure";
+                        s.chr_ill_13_i = "Blood pressure";
                     }
                     if (s.chr_ill_13.Contains("j"))
                     {
@@ -3080,7 +3083,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_14.Contains("i"))
                     {
-                        s.chr_ill_14_i = "Blooed pressure";
+                        s.chr_ill_14_i = "Blood pressure";
                     }
                     if (s.chr_ill_14.Contains("j"))
                     {
@@ -3284,7 +3287,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_15.Contains("i"))
                     {
-                        s.chr_ill_15_i = "Blooed pressure";
+                        s.chr_ill_15_i = "Blood pressure";
                     }
                     if (s.chr_ill_15.Contains("j"))
                     {
@@ -3488,7 +3491,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_16.Contains("i"))
                     {
-                        s.chr_ill_16_i = "Blooed pressure";
+                        s.chr_ill_16_i = "Blood pressure";
                     }
                     if (s.chr_ill_16.Contains("j"))
                     {
@@ -3692,7 +3695,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_17.Contains("i"))
                     {
-                        s.chr_ill_17_i = "Blooed pressure";
+                        s.chr_ill_17_i = "Blood pressure";
                     }
                     if (s.chr_ill_17.Contains("j"))
                     {
@@ -3896,7 +3899,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_18.Contains("i"))
                     {
-                        s.chr_ill_18_i = "Blooed pressure";
+                        s.chr_ill_18_i = "Blood pressure";
                     }
                     if (s.chr_ill_18.Contains("j"))
                     {
@@ -4100,7 +4103,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_19.Contains("i"))
                     {
-                        s.chr_ill_19_i = "Blooed pressure";
+                        s.chr_ill_19_i = "Blood pressure";
                     }
                     if (s.chr_ill_19.Contains("j"))
                     {
@@ -4304,7 +4307,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_20.Contains("i"))
                     {
-                        s.chr_ill_20_i = "Blooed pressure";
+                        s.chr_ill_20_i = "Blood pressure";
                     }
                     if (s.chr_ill_20.Contains("j"))
                     {
@@ -4508,7 +4511,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_21.Contains("i"))
                     {
-                        s.chr_ill_21_i = "Blooed pressure";
+                        s.chr_ill_21_i = "Blood pressure";
                     }
                     if (s.chr_ill_21.Contains("j"))
                     {
@@ -4712,7 +4715,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_22.Contains("i"))
                     {
-                        s.chr_ill_22_i = "Blooed pressure";
+                        s.chr_ill_22_i = "Blood pressure";
                     }
                     if (s.chr_ill_22.Contains("j"))
                     {
@@ -4916,7 +4919,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_23.Contains("i"))
                     {
-                        s.chr_ill_23_i = "Blooed pressure";
+                        s.chr_ill_23_i = "Blood pressure";
                     }
                     if (s.chr_ill_23.Contains("j"))
                     {
@@ -5120,7 +5123,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_24.Contains("i"))
                     {
-                        s.chr_ill_24_i = "Blooed pressure";
+                        s.chr_ill_24_i = "Blood pressure";
                     }
                     if (s.chr_ill_24.Contains("j"))
                     {
@@ -5324,7 +5327,7 @@ namespace IVAP.Syncer
                     }
                     if (s.chr_ill_25.Contains("i"))
                     {
-                        s.chr_ill_25_i = "Blooed pressure";
+                        s.chr_ill_25_i = "Blood pressure";
                     }
                     if (s.chr_ill_25.Contains("j"))
                     {
@@ -6540,10 +6543,10 @@ namespace IVAP.Syncer
                             s.W3b = "Less than 5";
                             break;
                         case "b":
-                            s.W3b = "5 - 10";
+                            s.W3b = " 5 - 10";
                             break;
                         case "c":
-                            s.W3b = "10 - 15";
+                            s.W3b = " 10 - 15";
                             break;
                         case "d":
                             s.W3b = "More than 15";
@@ -6625,7 +6628,7 @@ namespace IVAP.Syncer
                     if (s.H3.Contains("a"))
                         s.H3_a = "Pregnant";
                     if (s.H3.Contains("b"))
-                        s.H3_b = "Lactacting";
+                        s.H3_b = "Lactating";
                     if (s.H3.Contains("c"))
                         s.H3_c = "None";
                     if (s.H3.Contains("d"))
@@ -7555,7 +7558,7 @@ namespace IVAP.Syncer
                 }
 
                 Console.WriteLine("Rent : " + s.rent);
-                s.rent = s.rent.Replace('–', '-');
+                s.rent = s.rent.Replace('–', ' - ');
                 Console.WriteLine("Rent : " + s.rent);
                 synced.Add(s);
             }
